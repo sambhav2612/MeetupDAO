@@ -1,0 +1,14 @@
+.App-header {
+    background-color: #333;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.App-title {
+    font-size: 1.25em;
+}
+
+.Menu-item {
+    max-width: 100%;
+    font-size: 1em;
+}

@@ -1,7 +1,47 @@
-.App {
-  text-align: justify;
+.landing {
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-intro {
-  font-size: large;
+.landing img {
+  float: left;
+}
+
+.landing div {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.landing h1 {
+  padding: 100px 0 10px;
+  font-size: 50px;
+}
+
+.landing h2 {
+  font-size: 30px;
+}
+
+section {
+  padding: 20px;
+}
+
+#joindao, #proposal {
+  padding: 40px;
+}
+
+.inner {
+  margin: 0 auto;
+}
+
+.inner h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.inner p {
+  margin: 20px 0;
+  font-size: 20px;
 }

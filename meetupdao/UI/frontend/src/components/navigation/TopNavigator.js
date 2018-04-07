@@ -39,6 +39,13 @@ export default class TopNavigator extends Component {
                         active={activeItem === 'proposal'} 
                         onClick={this.handleItemClick} 
                     >Proposals</Menu.Item>
+                    <Menu.Item 
+                        className="Menu-item"
+                        name='member' 
+                        href="#members" 
+                        active={activeItem === 'member'} 
+                        onClick={this.handleItemClick} 
+                    >Members</Menu.Item>
                 </Menu.Menu>
             </Menu>
         </div>

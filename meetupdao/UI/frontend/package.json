@@ -1,7 +1,6 @@
 {
   "name": "frontend",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
@@ -9,6 +8,7 @@
     "react-scripts": "1.1.4",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.79.1",
+    "web3": "^0.20.0",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
@@ -16,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "serve -h build"
   }
 }

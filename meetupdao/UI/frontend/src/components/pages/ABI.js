@@ -1,4 +1,4 @@
-var address = "0xDad4c8889D99e7d2b4a64028b7Fd029A8F3c7D3E";
+var address = "0x4109f673b60E92c69f7d511D0fB641ecf7ea1694";
 
 var abi = [{
     "constant": true,
@@ -9,31 +9,44 @@ var abi = [{
     "name": "proposals",
     "outputs": [{
         "name": "recipient",
-        "type": "address"
+        "type": "address",
+        "value": "0x0000000000000000000000000000000000000000"
     }, {
         "name": "amount",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "0"
     }, {
         "name": "description",
-        "type": "string"
+        "type": "string",
+        "value": "Tester"
+    }, {
+        "name": "fileHash",
+        "type": "string",
+        "value": ""
     }, {
         "name": "votingDeadline",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "1522839557"
     }, {
         "name": "executed",
-        "type": "bool"
+        "type": "bool",
+        "value": false
     }, {
         "name": "proposalPassed",
-        "type": "bool"
+        "type": "bool",
+        "value": false
     }, {
         "name": "numberOfVotes",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "0"
     }, {
         "name": "currentResult",
-        "type": "int256"
+        "type": "int256",
+        "value": "0"
     }, {
         "name": "proposalHash",
-        "type": "bytes32"
+        "type": "bytes32",
+        "value": "0xa86d54e9aab41ae5e520ff0062ff1b4cbd0b2192bb01080a058bb170d84e6457"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -72,10 +85,37 @@ var abi = [{
     "name": "memberId",
     "outputs": [{
         "name": "",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "0"
     }],
     "payable": false,
     "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{
+        "name": "beneficiary",
+        "type": "address"
+    }, {
+        "name": "weiAmount",
+        "type": "uint256"
+    }, {
+        "name": "jobDescription",
+        "type": "string"
+    }, {
+        "name": "uploadFileHash",
+        "type": "string"
+    }, {
+        "name": "transactionBytecode",
+        "type": "bytes"
+    }],
+    "name": "newProposal",
+    "outputs": [{
+        "name": "proposalID",
+        "type": "uint256"
+    }],
+    "payable": false,
+    "stateMutability": "nonpayable",
     "type": "function"
 }, {
     "constant": true,
@@ -83,7 +123,8 @@ var abi = [{
     "name": "numProposals",
     "outputs": [{
         "name": "",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "8"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -97,13 +138,16 @@ var abi = [{
     "name": "members",
     "outputs": [{
         "name": "member",
-        "type": "address"
+        "type": "address",
+        "value": "0x0000000000000000000000000000000000000000"
     }, {
         "name": "name",
-        "type": "string"
+        "type": "string",
+        "value": ""
     }, {
         "name": "memberSince",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "1522838942"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -114,7 +158,8 @@ var abi = [{
     "name": "debatingPeriodInMinutes",
     "outputs": [{
         "name": "",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "5"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -125,7 +170,8 @@ var abi = [{
     "name": "totalMembers",
     "outputs": [{
         "name": "",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "6"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -136,7 +182,8 @@ var abi = [{
     "name": "minimumQuorum",
     "outputs": [{
         "name": "",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "2"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -147,7 +194,8 @@ var abi = [{
     "name": "owner",
     "outputs": [{
         "name": "",
-        "type": "address"
+        "type": "address",
+        "value": "0x52c3a9b0f293cac8c1baabe5b62524a71211a616"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -178,7 +226,8 @@ var abi = [{
     "name": "totalProposals",
     "outputs": [{
         "name": "",
-        "type": "uint256"
+        "type": "uint256",
+        "value": "8"
     }],
     "payable": false,
     "stateMutability": "view",
@@ -189,56 +238,11 @@ var abi = [{
     "name": "majorityMargin",
     "outputs": [{
         "name": "",
-        "type": "int256"
+        "type": "int256",
+        "value": "0"
     }],
     "payable": false,
     "stateMutability": "view",
-    "type": "function"
-}, {
-    "constant": false,
-    "inputs": [{
-        "name": "beneficiary",
-        "type": "address"
-    }, {
-        "name": "weiAmount",
-        "type": "uint256"
-    }, {
-        "name": "jobDescription",
-        "type": "string"
-    }, {
-        "name": "transactionBytecode",
-        "type": "bytes"
-    }],
-    "name": "newProposal",
-    "outputs": [{
-        "name": "proposalID",
-        "type": "uint256"
-    }],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-}, {
-    "constant": false,
-    "inputs": [{
-        "name": "beneficiary",
-        "type": "address"
-    }, {
-        "name": "etherAmount",
-        "type": "uint256"
-    }, {
-        "name": "jobDescription",
-        "type": "string"
-    }, {
-        "name": "transactionBytecode",
-        "type": "bytes"
-    }],
-    "name": "newProposalInEther",
-    "outputs": [{
-        "name": "proposalID",
-        "type": "uint256"
-    }],
-    "payable": false,
-    "stateMutability": "nonpayable",
     "type": "function"
 }, {
     "constant": false,
@@ -268,6 +272,32 @@ var abi = [{
     }],
     "name": "addMember",
     "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{
+        "name": "beneficiary",
+        "type": "address"
+    }, {
+        "name": "etherAmount",
+        "type": "uint256"
+    }, {
+        "name": "jobDescription",
+        "type": "string"
+    }, {
+        "name": "uploadFileHash",
+        "type": "string"
+    }, {
+        "name": "transactionBytecode",
+        "type": "bytes"
+    }],
+    "name": "newProposalInEther",
+    "outputs": [{
+        "name": "proposalID",
+        "type": "uint256"
+    }],
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "function"
@@ -320,7 +350,8 @@ var abi = [{
     "name": "checkProposalCode",
     "outputs": [{
         "name": "codeChecksOut",
-        "type": "bool"
+        "type": "bool",
+        "value": true
     }],
     "payable": false,
     "stateMutability": "view",
@@ -472,4 +503,6 @@ var abi = [{
     }],
     "name": "receivedTokens",
     "type": "event"
-}]
+}];
+
+export {address, abi};

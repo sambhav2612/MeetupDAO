@@ -10,15 +10,17 @@ import Members from './components/pages/Members.js'
 import './App.css';
 
 const Main = () => {
-  <Router>
-    <main>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/proposals' component={Proposals}/>
-        <Route path='/members' component={Members}/>
-      </Switch>  
-    </main>
-  </Router>
+  return (
+    <Router>
+      <main>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/proposals' component={Proposals}/>
+          <Route path='/members' component={Members}/>
+        </Switch>  
+      </main>
+    </Router>
+  );
 }
 
 export default Main;

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import TopNavigator from './navigation/TopNavigator.js';
 import JoinDAOForm from './navigation/JoinDAOForm.js';
 import landingImage from './images/landing.jpg';
 
-const Home = () => {
+export default class Home extends Component {
+  render() {
+    return (
       <div className="App">
         <TopNavigator />
         <div className="container">
@@ -65,5 +67,6 @@ const Home = () => {
             </section>
           </div>
       </div>
-}
-export default Home;
+    );
+  }
+};

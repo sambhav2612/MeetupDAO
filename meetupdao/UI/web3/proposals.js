@@ -79,7 +79,22 @@ function executeProposal(proposalNumberValue) {
 }
 
 
+<<<<<<< HEAD
 function vote(proposalNumberValue) {
+=======
+    var proposalNumber = proposalNumberValue;
+    var idYes = "supportsProposal_" + proposalNumber + "_yes";
+    var idNo  = "supportsProposal_" + proposalNumber + "_no";
+    var idJustificationText = "justificationText_" + proposalNumber;
+    var yes=document.getElementById(idYes).checked;
+    var no= document.getElementById(idNo).checked;
+    if(yes==true)
+      var supportsProposal = true;
+    else if(no==true)
+      var supportsProposal = false;
+    
+    var justificationText=document.getElementById(idJustificationText).value;
+>>>>>>> 9c3c8cb2d126e107470c8e6dfc029709e7c67b3e
 
   var proposalNumber = proposalNumberValue;
   var idYes = "supportsProposal_" + proposalNumber + "_yes";
@@ -165,7 +180,12 @@ function getProposals() {
         }
 
 
+<<<<<<< HEAD
       })
+=======
+    if (result[8].s < 0) {
+        currentStatus = (-1 * currentStatus);
+>>>>>>> 9c3c8cb2d126e107470c8e6dfc029709e7c67b3e
     }
   })
 

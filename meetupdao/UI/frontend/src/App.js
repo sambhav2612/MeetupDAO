@@ -4,9 +4,9 @@ import {
   Switch, 
   Route 
 } from 'react-router-dom';
-import Home from './components/pages/Home.js'
-import Proposals from './components/pages/Proposals.js'
-import Members from './components/pages/Members.js'
+import * as Home from './components/pages/Home.js'
+import * as Proposals from './components/pages/Proposals.js'
+import * as Members from './components/pages/Members.js'
 import './App.css';
 
 const Main = () => {
